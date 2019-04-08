@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Vehicles\Helicopter.cs" />
+    <Compile Include="Entities\Vehicles\Hmmwv.cs" />
     <Compile Include="Entity.cs" />
     <Compile Include="IMove.cs" />
     <Compile Include="ISound.cs" />

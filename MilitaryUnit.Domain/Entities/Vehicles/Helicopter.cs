@@ -25,7 +25,7 @@ namespace MilitaryUnit.Domain
 
         public override void Drive()
         {
-            Console.WriteLine($"Helicopter {Name} Flying");
+            Console.WriteLine($"Helicopter {Name} flying");
         }
 
         public override void MakeSound()

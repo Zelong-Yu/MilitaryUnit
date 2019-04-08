@@ -11,14 +11,17 @@ namespace MilitaryUnit
     {
         static void Main(string[] args)
         {
-            Vehicle bee= new Vehicle("Bumbble bee");
+            Hmmwv vee= new Hmmwv("Humvee");
             Helicopter heli = new Helicopter("Apache");
-            bee.MoveTo(3, 3);
             Console.WriteLine(Entity.numEntities);
             Console.WriteLine(Vehicle.numVehicles);
             Console.WriteLine(Helicopter.numHelicopters);
+
+
+            vee.MoveTo(3, 3);
+            vee.Stop();
+
             heli.MoveTo(2, 2);
-            bee.Stop();
             heli.Stop();
         }
     }
