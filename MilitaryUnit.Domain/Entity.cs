@@ -28,5 +28,10 @@ namespace MilitaryUnit.Domain
             Name = "Default Entity";
             numEntities++;
         }
+
+        public virtual void Report()
+        {
+            Console.WriteLine($"{Name} is at X:{X} Y:{Y}");
+        }
     }
 }

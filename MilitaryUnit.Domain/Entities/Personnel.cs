@@ -8,19 +8,40 @@ namespace MilitaryUnit.Domain
 {
     public class Personnel : Entity, IMove
     {
-        public void Move()
+        public static int numPersonnel = 0;
+
+        public Personnel()
         {
-            throw new NotImplementedException();
+            Name = "John Doe";
+            numPersonnel++;
+        }
+
+        public Personnel(string name) : base(name)
+        {
+            numPersonnel++;
+        }
+
+        public void Move(int x, int y)
+        {
+            X = x;
+            Y = y;
         }
 
         public void MoveTo(int x, int y)
         {
-            throw new NotImplementedException();
+            Speak();
+            Move(x, y);
+            Report();
+        }
+
+        protected virtual void Speak()
+        {
+            Console.WriteLine("Roger that. ");
         }
 
         public void Stop()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"{Name} stops moving and parade rest.");
         }
     }
 }

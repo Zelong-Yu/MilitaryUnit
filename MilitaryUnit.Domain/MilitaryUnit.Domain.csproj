@@ -41,21 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Personnels\Infrantry.cs" />
+    <Compile Include="Entities\Personnels\Medic.cs" />
     <Compile Include="Entities\Vehicles\Helicopter.cs" />
     <Compile Include="Entities\Vehicles\Hmmwv.cs" />
     <Compile Include="Entity.cs" />
     <Compile Include="IMove.cs" />
     <Compile Include="ISound.cs" />
-    <Compile Include="Mission.cs" />
     <Compile Include="Entities\Vehicle.cs" />
-    <Compile Include="Weapon.cs" />
     <Compile Include="Entities\Personnel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Entities\Personnels\" />
-    <Folder Include="Missions\" />
-    <Folder Include="Weapons\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

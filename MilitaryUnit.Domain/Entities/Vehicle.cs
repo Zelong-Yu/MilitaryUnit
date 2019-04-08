@@ -38,11 +38,6 @@ namespace MilitaryUnit.Domain
             Report();
         }
 
-        public virtual void Report()
-        {
-            Console.WriteLine($"{Name} is at X:{X} Y:{Y}");
-        }
-
         public virtual void Stop()
         {
             MakeSound();
